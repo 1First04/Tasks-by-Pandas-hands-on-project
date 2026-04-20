@@ -5,7 +5,8 @@ import pandas as pd
 # because of special characters in the text.
 try:
     file_path = 'Sample - Superstore.csv'
-    df = pd.read_csv(file_path, encoding='"latin1"')
+    df = pd.read_csv("C:\Users\hp\Desktop\Data Science\CSEASTU Bootcamp\Sample - Superstore.csv", encoding='ascii',
+                     delimiter=',')
     print("Dataset loaded successfully!\n")
 except FileNotFoundError:
     print("Error: The file was not found. Please check the file path.")
